@@ -4,14 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="@tonconnect/ui/dist/tonconnect-ui.min.js"></script>
+    <title>Page Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding-left: 10%;
+        }
+
+        .message {
+            background-color: #f9f9f9;
+            border-left: 6px solid #7f8c8d;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .message a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
 
-    <p>Ну вот и закончился бедтрип. С прошедшим Днем рождения! Я че то так ничего и не придмал, только худи от криптона (<a href="https://getgems.io/crypton?filter=%7B%22saleType%22%3A%22fix_price%22%2C%22attributes%22%3A%7B%22Clothes+RWA%22%3A%5B%22Hoodie%22%5D%7D%7D">ссылка</a>), но хуй знает надо тебе или нет, можешь кошель приконнектить, если надо, я нфт скину(руками скину, так как ебал я в тоне разбираться)</p>
+    <div class="container">
+        <div class="message">
+            <p><strong>Ну вот и закончился бедтрип. С прошедшим Днем рождения!</strong></p>
+            <p>Я че то так ничего и не придумал, только худи от криптона (<a href="https://getgems.io/crypton?filter=%7B%22saleType%22%3A%22fix_price%22%2C%22attributes%22%3A%7B%22Clothes+RWA%22%3A%5B%22Hoodie%22%5D%7D%7D">ссылка</a>), но хуй знает надо тебе или нет, можешь кошель приконнектить, если надо, я скину нфт на аддресс (руками скину, так как ебал я в тоне разбираться).</p>
+        </div>
 
-    <div id="connect" style="position: absolute; top: 2%; right: 2%"></div>
+        <div id="connect" style="position: absolute; top: 2%; right: 2%"></div>
+    </div>
+
+    <script src="@tonconnect/ui/dist/tonconnect-ui.min.js"></script>
     <script>
         const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
             manifestUrl: 'https://donatnagye.github.io/nikitos-dr/tonconnect-manifest.json',
